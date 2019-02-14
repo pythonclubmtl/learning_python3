@@ -65,7 +65,7 @@ To get the one before the last one:
 >>> my_list[-2]
 ```
 
-# dictionaries
+# Dictionaries
 
 You can see dictonaries as lists with uniques keys that will lead to a value or element. 
 A list can be seen as a kind of dictionary where the key to call the value of each element is the position of this element in the list.
@@ -81,18 +81,23 @@ For dictionaries, each element is identified by a unique string, called a key, `
 ```
 In the previous example, integers were used as keys for the dictionary. The dictionary contains two different element, the first element's key is `1` and its value is `apple`.
 To retrieve the value of the element associated with the key `1`, we can write:
+
 ```python
 # get element of dict using key
 >>> my_dict[1]
 ```
-Instead of integers, strings are usually employed:
+
+Instead of integers, strings are usually employed: 
+
 ```python
 # dict with string keys
 >>> my_dict = {'fruit': 'apple', 'vegetable': 'potato'}
 >>> my_dict['vegetable']
 ```
+
 We can again, go update any value using its key:
 Update/add items to dicts:
+
 ```python
 >>> my_dict = {'fruit': 'apple', 'vegetable': 'potato'}
 

@@ -7,32 +7,33 @@ In this section, we are going to manipulate strings a bit more.
 
 ### Exercise 1:
 
-We'll get started with a few exercises involving 
+We'll get started with a few exercises involving variables. Try to guess the output of the python console when there's a _____.
 
-    In [1]: emily = 25952
-    In [2]: hannah = 23073
-    In [3]: khaleesi = 5
-    In [4]: emily
-    Out[4]: ______
-    In [5]: hannah + 1
-    Out[5]: ______
-    In [6]: 3 * khaleesi
-    Out[6]: ______
+```python
+    >>> emily = 25952
+    >>> hannah = 23073
+    >>> khaleesi = 5
+    >>> emily
+        _______
+    >>> hannah + 1
+        ______
+    >>> 3 * khaleesi
+        ______
+```
 
 ### Exercise 2:
 
 Let's change the content. Insert the correct values and variable names into the blanks.
+```python
+    >>> emily = emily + 1
+    >>> emily
+        _____
 
-    In [7]: emily = emily + 1
-    In [8]: emily
-    Out[8]: _____
-
-    In [9]: all_babies = 0
-    In [10]: all_babies = _____ + _____ + _____
-    In [11]: all_babies
-    Out[11]: 49031
-
-*If you like maths, you may sigh loud at the notion of redefining a variable every few lines.*
+    >>> all_babies = 0
+    >>> all_babies = _____ + _____ + _____
+    >>> all_babies
+        49031
+```
 
 ### Exercise 3:
 
@@ -58,3 +59,15 @@ Which are correct variable assignments?
 
 ### Types
 
+You can check the `type` of any variable using the type command:
+
+```python
+>>> a = 5
+>>> type(a)
+<class 'int'>
+>>> a = "hello"
+>>> type(a)
+<class 'str'>
+```
+
+You can see here that `a` was at first an integer, and the became a string when the value `hello` was affected to it.

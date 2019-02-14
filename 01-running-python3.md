@@ -26,7 +26,7 @@ This will take you to the interactive console.
 
 If you open a terminal and type `gedit`. It will open the text editor **gedit**.
 
-As a text editor, it is fine to start with **gedit**. Please make sure to change tabs to spaces via *Edit -> Preferences -> Editor -> tick 'Insert spaces instead of tabs'* [(Want to learn more about this?](001b-space-tabs.md)).
+As a text editor, it is fine to start with **gedit**. Please make sure to change tabs to spaces via *Edit -> Preferences -> Editor -> tick 'Insert spaces instead of tabs'*.
 
 Later, we will use a text editor with more features that will be helpful for python code writing.
 
