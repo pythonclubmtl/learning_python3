@@ -103,7 +103,7 @@ for year in years_set:
                         yearly_female_count[female_name] = yearly_female_count[female_name] + int(row[4])
     # At the end of each year for loop we add to {total_female_count_by_year} the dictionary for the year
     total_female_count_by_year[year] = yearly_female_count
-    # we retrieve the dictionary key (unique_female_name) with the highest value (highest total count for the year) fron the yearly dataset
+    # we retrieve the dictionary key (unique_female_name) with the highest value (highest total count for the year) from the yearly dataset
     # the max function can take a list or a dictionary, if it is a dictionary, we need to specify that we need to retrieve the key associated with the highest value
     max_count_female_name = max(yearly_female_count, key=yearly_female_count.get)
     # We print the year and name with highest count and the count for each year (at the end of each year loop)

@@ -11,8 +11,7 @@ def function_name( input_variables ):
    if something is True:
        then something else
    else:
-       stuff here
-   then, other thing happen
+       then stuff here
    maybe even another thing
    return output_variables
 ```
