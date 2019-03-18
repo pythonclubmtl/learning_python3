@@ -55,7 +55,7 @@ You should have a slack tram to test your apps, do not test it on an existing an
 
 Then, go to https://api.slack.com/apps and click on `Create an App`. Name it as you wish, and select your training workspace. The first thing we will need is our bot's token. A token is a long sequence of characters that is unique.  The token is used by Slack to verify that you, the bot owner, are the one connecting a python script to your bot, otherwise, anyone could take over your bot.  Click on `OAuth & Permissions` in the `Features` menu.
 
-Then go to the `Scopes` section, and select `admin` (you will need to adjust permissions before deploying your bot to a functional Slack Team). Press `Save changes` and scroll up to the `OAuth Tokens & Redirect URLs`.  
+Then go to the `Scopes` section, and select `Send messages as user chat:write:user ` (you will need to adjust permissions before deploying your bot to a functional Slack Team). Press `Save changes` and scroll up to the `OAuth Tokens & Redirect URLs`.  
 Click on `Install App to Workspace` and select your testing workspace. Authorize the bot to be an admin of the workspace and for `chat:write`, which will allow it to send messages.
 
 The `OAuth Tokens & Redirect URLs` will now display an `OAuth Access Token` (starts by `xox`), copy it and store it somewhere safe, we will need it later.
