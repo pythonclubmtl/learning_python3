@@ -42,6 +42,19 @@ You should now be able to apply a CMNB to text data, it's time to practice your 
 
 Open and go through: https://scikit-learn.org/0.19/datasets/twenty_newsgroups.html
 
+## Objectives
+
+1. Write a file (called `modules/vectorizer.py`) that contains several functions that can be used in a row to perform TF-IDF vectorization of a list of strings.
+2. Write another file (called `modules/classifier.py`) that either takes as an input a vectorizer object from the functions of the previous file or loads a `.joblib` vectorizer (see Notes) in addition to a dictionary of `{ labels: strings }` that are labels of a document and string documents. The file will contain several functions that generate a classifier (save it as a `.joblib`)
+3. Write another function in the file called `modules/classifier.py` that inputs a `vectorizer.joblib`, a `classifier.joblib` and a string. The functions should output the class (or label) and the probability as a percentage of the document belonging to that class.
+
+##### Notes
+
+* The file's first function should first concatenate (with spaces in between) all the strings from the list to feed the complete vocabulary to the following functions.
+* It is possible to feed the NLTK stopwords to the vectorizer (https://scikit-learn.org/stable/modules/feature_extraction.html#common-vectorizer-usage).
+* You can also save a vectorizer or classifier as a `.joblib` file. You can then reload and re-use it later from another file or function: https://scikit-learn.org/stable/modules/model_persistence.html
+
+
 
 
 
