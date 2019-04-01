@@ -1,7 +1,7 @@
 from slackclient import SlackClient
 import time
 
-SLACK_BOT_TOKEN = "xoxp-547704002851-547209488609-548029262341-c87b58015dc71f15705b74fbc2cd5d6a"
+SLACK_BOT_TOKEN = "xoxp-560904392741-560457746483-573665323909-922729fe28cec60eb35ad7709af44d45"
 slack_client = SlackClient(SLACK_BOT_TOKEN)
 
 msg = "Hello Slack!"
@@ -12,4 +12,4 @@ while True:
         channel='#general',
         text=msg
     )
-    time.sleep(10)
+    time.sleep(2)

@@ -109,5 +109,5 @@ for year in years_set:
     # We print the year and name with highest count and the count for each year (at the end of each year loop)
     print(year, max_count_female_name, yearly_female_count[max_count_female_name])
     # What we got here is the most popular names for all years, we actually need to get it for each year
-    print("Does anyone know why Olivia is so popular ?")
+print("Does anyone know why Olivia is so popular ?")
 
