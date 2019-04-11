@@ -1,17 +1,18 @@
 from rake_nltk import Rake
 
-def Kextract(textt):
+def Kextract(x):
     r = Rake()
-    r.extract_keywords_from_text(textt)
+    r.extract_keywords_from_text(x)
     scores = r.get_ranked_phrases_with_scores()
     result = {}
-    seuil = 0
-    for score in scores:
+    seuil = 10
+    for score in scores: # Scores est une liste, pour laquelle chaque element est une liste egalement. Cette boucle for passe de score[1] a scores[2] etc... et prend chaque premiere valeur de la liste (le score associe au keyword) pour la mettre dans le dictionnaire result. Chaque loop du for ajoute une valeur au dico !
         if score[0] > seuil:
-            result[score[1]] = 0
+#            result[score[1]] = 0
             result[score[1]] = score[0]
-    return result
+    return result #Donne a manger x a Kextract(), elle te renvoie le dico result
 
-textt=''' Mais qu’est-ce que j’ai fait, mais qu’est-ce que j’ai fait » ont pu entendre les conseillers de Bruno Le Maire ce matin tandis que le ministre sortait en courant de son bureau. Quelques secondes plus tôt, celui-ci avait découvert qu’il venait de privatiser sa propre famille en lieu et place de Aéroports de Paris. « C’est dramatique mais c’est signé et en plus pour 70 ans » note un responsable. « Bruno Le Maire s’est engagé par écrit, les actionnaires devraient prendre possession de sa famille dès la rentrée septembre 2019 ». C’est un consortium chinois qui prendra livraison de l’entière famille de Bruno Le Maire. Contacté, le consortium s’est réjoui, soulignant que même le gouvernement chinois n’avait pas osé avoir cette idée brillante. Selon plusieurs sources, il semble que Bruno Le Maire signait plusieurs privatisations en même temps et n’aurait pas remarqué son livret de famille sous une pile de papiers. De son côté Edouard Philippe a tenu à féliciter son ministre de l’exemple qu’il donne et encourager ses autres ministres à faire de même. « Je suis sûr que les Français suivront cet exemple et je peux vous assurer que vos familles seront bien traitées.'''
-scores = Kextract(textt)
-print(scores)
+textt='''In industry today, the use of vibratory finishing processes as a final manufacturing step is increasing rapidly. Through the ability of these processes to achieve stable material removal rates, very consistent results in the control of surface texture are achieved. Even though the importance of these processes to manufacturing industry is increasing, the fundamentals of the material removal mechanism have not yet been established, and the associated lack of scientific understanding is an obstacle for process optimization. This paper proposes a mathematical model of the material removal mechanism based on abrasive finishing theory. The proposed model is used to identify key parameters and analyze their effect on the material removal mechanism. Experimental tests were conducted to validate the proposed model and provide correlation with the results obtained from the theoretical analysis. For the first time, fundamental abrasive machining process parameters such as the equivalent chip thickness and specific cutting energy realized through vibratory finishing are revealed.'''
+
+scores_per_keyword = Kextract(textt) # result = Resultat de la fonction a qui on a donne a manger textt (Ce que la fonction retourne). Cette ligne de commande ecrit ce resultat dans la variable scores_per_keyword !
+print(scores_per_keyword)
