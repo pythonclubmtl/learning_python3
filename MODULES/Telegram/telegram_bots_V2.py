@@ -4,6 +4,8 @@ import telebot
 bot = telebot.TeleBot("791446971:AAEDuNxuEQU67jbScnjLwcrOCVG57lBD5oY")
 tb = telebot.TeleBot("791446971:AAEDuNxuEQU67jbScnjLwcrOCVG57lBD5oY")
 
+bot.send_message(chat_id = "-1001386026536", text = "hi" )
+
 #This function will accept documents like PDF articles
 @bot.message_handler(content_types=['document'])
 #The message from telegram is always considered in the variable message
