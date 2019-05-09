@@ -1,5 +1,10 @@
 #Importing the telebot module
 import telebot
+
+import logging
+
+logger = telebot.logger
+telebot.logger.setLevel(logging.DEBUG) # Outputs debug messages to console.
 #Call the Telebot created in telegrm thanks to its TOKEN
 bot = telebot.TeleBot("791446971:AAEDuNxuEQU67jbScnjLwcrOCVG57lBD5oY")
 tb = telebot.TeleBot("791446971:AAEDuNxuEQU67jbScnjLwcrOCVG57lBD5oY")
