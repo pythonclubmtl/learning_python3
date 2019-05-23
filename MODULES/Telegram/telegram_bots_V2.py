@@ -3,8 +3,8 @@ import telebot
 
 import logging
 
-logger = telebot.logger
-telebot.logger.setLevel(logging.DEBUG) # Outputs debug messages to console.
+#logger = telebot.logger
+#telebot.logger.setLevel(logging.DEBUG) # Outputs debug messages to console.
 #Call the Telebot created in telegrm thanks to its TOKEN
 bot = telebot.TeleBot("791446971:AAEDuNxuEQU67jbScnjLwcrOCVG57lBD5oY")
 tb = telebot.TeleBot("791446971:AAEDuNxuEQU67jbScnjLwcrOCVG57lBD5oY")
@@ -22,9 +22,9 @@ def handle_docs(message):
 #take the extension from the file_info using rsplit function. This will be used for the downloading in the same document type as the original one.
 	extension = file_info.file_path.rsplit('.')[1]
 #Define the path where the file will be downloaded
-	src = '/media/maxime/DATA/PYTHON_CLUB/PROJECT/learning_python3/MODULES/Telegram/'
+	src = './biblios/'
 #Choose the file name as "File_id.extension". If you find a better way to name the file, please feel free to modify the "file_info.file_id" name.
-	filename = src + file_info.file_id + "." + extension
+	filename = src + message.chat.first_name + "." + extension
 	with open(filename, 'wb') as new_file:
 		new_file.write(downloaded_file)
 
