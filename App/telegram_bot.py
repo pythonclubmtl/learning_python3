@@ -1,6 +1,6 @@
 #Importing the telebot module
 import telebot
-import my_functions as functions
+import ml_functions as functions
 import logging
 import os
 import re
