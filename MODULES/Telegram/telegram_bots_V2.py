@@ -1,15 +1,18 @@
 #Importing the telebot module
 import telebot
-
+import my_functions as functions
 import logging
+import os
+import re
 
 #logger = telebot.logger
 #telebot.logger.setLevel(logging.DEBUG) # Outputs debug messages to console.
 #Call the Telebot created in telegrm thanks to its TOKEN
-bot = telebot.TeleBot("791446971:AAEDuNxuEQU67jbScnjLwcrOCVG57lBD5oY")
-tb = telebot.TeleBot("791446971:AAEDuNxuEQU67jbScnjLwcrOCVG57lBD5oY")
+bot = telebot.TeleBot("894655366:AAFInIq1yC9bBKrbaCr6Lgx1Es-Geio4syk")
+# bot = telebot.TeleBot("791446971:AAEDuNxuEQU67jbScnjLwcrOCVG57lBD5oY")
+chatid="159777457"
 
-bot.send_message(chat_id = "-1001386026536", text = "hi" )
+bot.send_message(chat_id=chatid, text = "hi" )
 
 #This function will accept documents like PDF articles
 @bot.message_handler(content_types=['document'])
@@ -22,7 +25,8 @@ def handle_docs(message):
 #take the extension from the file_info using rsplit function. This will be used for the downloading in the same document type as the original one.
 	extension = file_info.file_path.rsplit('.')[1]
 #Define the path where the file will be downloaded
-	src = './biblios/'
+
+	src = os.getcwd()+'/bib_files/'
 #Choose the file name as "File_id.extension". If you find a better way to name the file, please feel free to modify the "file_info.file_id" name.
 	filename = src + message.chat.first_name + "." + extension
 	with open(filename, 'wb') as new_file:
@@ -39,7 +43,41 @@ def send_welcome(message):
 def echo_all(message):
 	bot.reply_to(message, "Yes sir I'm here, what do you need ?")
 
-#if
-	tb.send_message(-326067236, URL)
 
+#if
+	# bot.send_message(-326067236, URL)
+
+
+@bot.message_handler(commands=['train'])
+def trainer_tester(message):
+	(abstracts_bib, label_bib, files_list_bib)=functions.bib_reader()
+	(abstracts_csv, label_csv, files_list_csv)=functions.csv_reader()
+	label=label_bib+label_csv
+	abstracts= abstracts_csv+abstracts_bib
+	trained_vectorizer=functions.my_vectorizer(abstracts)
+
+	# ================================================================================================================================
+	# This part uses my_classifier function from my_functions file to split, train, and test the vectorized abstracts and reports the
+	# my_score which is the % of success. In the end it writes that it is trained and then introduces the classes in the database.
+	# ================================================================================================================================
+	(X_train, X_test, y_train, y_test, clf)=functions.my_classifier(abstracts, label, trained_vectorizer)
+
+	score=functions.my_score(X_test, y_test, clf)
+	round_score = round(score)
+	(predicted_category1, predicted_proba1, classes)=functions.my_predict('')
+	reply_text = "Trained!\n"+str(round_score)+"% Success over tested dataset! \n"+"These are the classes: \n"+str(classes)+"Now you can try the prediction by copy/pasting an abstract infront of /predict (/predict abstract text)"
+	bot.send_message(chat_id=chatid, text = reply_text)
+
+
+# ================================================================================================================================
+# This part gets a file or text of an abstract for prediction of its class; then predicts the class and prints all the classes, the predicted class related
+# to the abstract, and the probability values (range:0-1) corresponding to each class.
+# ================================================================================================================================
+@bot.message_handler(commands=['predict'])
+def predict(message):
+	abstract=re.sub('/predict', '', message.text)
+	(predicted_category1, predicted_proba1, classes)=functions.my_predict(abstract)
+	reply_text = "Prediction completed!\n the class is:\n"+str(predicted_category1)
+	bot.send_message(chat_id=chatid, text = reply_text)
+	    
 bot.polling()
