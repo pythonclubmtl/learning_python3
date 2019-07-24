@@ -11,7 +11,11 @@ import bibtexparser
 from sklearn import preprocessing
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
+import re
 import nltk
+from collections import Counter
+import matplotlib.pyplot as plt
+
 
 #from nltk.tokenize.moses import MosesDetokenizer
 import string
@@ -46,7 +50,7 @@ def csv_reader():
     files_list = glob.glob('*.{}'.format(extension))
     abstracts_csv=[]; label_csv=[]
     for files_name in files_list:
-        with open(files_name) as file:
+        with open(files_name, encoding="utf8") as file:
             table = csv.reader(file, delimiter=',')
             for row in table:
                 if not row[10]:
@@ -55,6 +59,51 @@ def csv_reader():
                     clean_abstract=stopwords_func(row[10])
                     abstracts_csv.append(clean_abstract)
                     label_csv.append(files_name.rsplit(".")[0])
+    os.chdir('..')
+    return abstracts_csv, label_csv, files_list
+
+# ================================================================================================================================
+# It goes to the folder_path and gets all the csv files and put their abstracts and labels in abstracts_csv and label_csv lists
+# And then it makes a graph of the high freq. words with their repeated values.
+# ================================================================================================================================
+def csv_reader_ploter():
+    folder_path = os.getcwd()+"/bib_files"
+    extension = 'csv'
+    os.chdir(folder_path)
+    files_list = glob.glob('*.{}'.format(extension))
+    abstracts_csv=[]; label_csv=[]
+    for files_name in files_list:
+        with open(files_name, encoding="utf8") as file:
+            table = csv.reader(file, delimiter=',')
+            for row in table:
+                if not row[10]:
+                    pass
+                else:
+                    clean_abstract=stopwords_func(row[10])
+                    abstracts_csv.append(clean_abstract)
+                    label_csv.append(files_name.rsplit(".")[0])
+            reg = re.compile('\S{4,}')
+            s = str(abstracts_csv)
+            c = Counter(ma.group() for ma in reg.finditer(s))
+            dictc=dict(c)
+            for key, value in sorted(dictc.items(), key=lambda item: item[1]):
+               print("%s: %s" % (key, value))
+            lists = sorted(dictc.items()) # sorted by key, return a list of tuples
+            x, y = zip(*lists) # unpack a list of pairs into two tuples
+            plt.plot(x, y)
+            plt.show()
+            import pdb; pdb.set_trace()
+
+#            words=[]
+#            values=[]
+#            for x in c.items():
+#                words.append (x[0])
+#                values.append (x[1])
+#            values, words = zip(*sorted(zip(values, words)))
+#            values, words = (list(t) for t in zip(*sorted(zip(values, words))))
+#            values.sort(reverse = True)
+#            normalized_values = [float(i)/max(values) for i in values]
+        plt.scatter(words, normalized_values)
     os.chdir('..')
     return abstracts_csv, label_csv, files_list
 
@@ -68,7 +117,7 @@ def bib_reader():
     files_list = glob.glob('*.{}'.format(extension))
     abstracts_bib=[]; label_bib=[]
     for files_name in files_list:
-        with open(files_name) as bibtex_file:
+        with open(files_name, encoding="utf8") as bibtex_file:
             bib_database = bibtexparser.load(bibtex_file)
             for row in bib_database.entries:
                 if not row.get("abstract"):
