@@ -5,12 +5,7 @@
 
 # Python 02
 
-Start your VM, open your terminal (`Ctrl+Alt+T`), then type  and try to type the commands shown on screen, We're going to go through:
-
-* python shell
-* operators and integers
-
-Start your VM, open a terminal (`Ctrl+Alt+T`), then type in `python3`
+Start your VM, open your terminal (`Ctrl+Alt+T`) or open your python prompt.
 
 ---
 

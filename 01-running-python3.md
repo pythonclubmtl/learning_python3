@@ -1,3 +1,5 @@
+If you are currently trying to install Python on your Linux Virtual Machine, then this section is for you. If you already have python installed on your laptop, and would like to get started with sessions 1-3, please jump to the next session.
+
 
 # Installing Python
 

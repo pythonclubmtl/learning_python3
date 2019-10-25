@@ -2,10 +2,10 @@
 
 ### Learn:
 
-0. ###### Follow one of the many tutorials available out there to install an Ubuntu Virtual Machine on your computer
-1. ###### [Running python](001-installing-python3.md)
-2. ###### [Using python from the shell](002-using-pythonshell.md)
-3. ###### [Strings and integers](003-strings-and-integers.md) 
+0. ###### [Getting Python](00-getting-python.md)
+1. ###### [Running python](01-installing-python3.md)
+2. ###### [Using python from the shell](02-using-pythonshell.md)
+3. ###### [Strings and integers](03-strings-and-integers.md) 
     * Go through: https://www.practicepython.org/exercise/2014/01/29/01-character-input.html
     * Then this one: https://www.practicepython.org/exercise/2014/02/05/02-odd-or-even.html
     * Next: https://www.practicepython.org/exercise/2014/03/05/05-list-overlap.html
@@ -103,5 +103,5 @@ A detailed solution for the first task (without using functions though, you will
 ---
 
 ### Extras:
-* [Editors Four spaces VS tabs](001b-space-tabs.md)
+* [Editors Four spaces VS tabs](02b-space-tabs.md)
 
