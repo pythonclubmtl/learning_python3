@@ -1,6 +1,8 @@
 # Python
 
+
 ![Wrongkiddo](./assets/pseudowrong.jpg?raw=true "Wrongkiddo")
+
 
 Python is a general purpose and high level programming language. It is not a compiled language. It favors stuctured programming based on scripts, functional programming and objet oriented programming.
 
