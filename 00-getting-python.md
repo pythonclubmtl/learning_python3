@@ -1,6 +1,6 @@
 # Python
 
-<img src="assets/pseudowrong.jpg" alt="drawing" width="550"/>
+[<img src="assets/pseudowrong.jpg">]()
 
 Python is a general purpose and high level programming language. It is not a compiled language. It favors stuctured programming based on scripts, functional programming and objet oriented programming.
 
