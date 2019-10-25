@@ -1,6 +1,6 @@
 # Python
 
-<img src="assets/pseudowrong.jpg" alt="drawing" width="550"/>
+![Wrongkiddo](./assets/pseudowrong.jpg?raw=true "Wrongkiddo")
 
 Python is a general purpose and high level programming language. It is not a compiled language. It favors stuctured programming based on scripts, functional programming and objet oriented programming.
 
@@ -23,7 +23,7 @@ For these reasons, an ideal Python learning experience would be within the Linux
 
 ### Virtual Machines
 
-<img src="assets/win-in-win.jpg" alt="drawing" width="550"/>
+![Wrongkiddo](./assets/win-in-win.jpg?raw=true "Wrongkiddo")
 
 It is actually quite easy to run a "computer within your computer", a virtual computer that is being emulated by the hardware that you have on your computer. Virtual Machine allow you to conviently run a Mac OS Virtual Machine on your Windows machine or a Windows machine on a Linux host. 
 Virtual Box (https://www.virtualbox.org/) is a virtualization (open source software), basically, it can run a virtual Linux computer in a window of your computer, allowing you to minimize your browser or music in the background while you are working on your Python code.
@@ -36,7 +36,7 @@ However, since installing and setting up a Virtual Machine will also slow down y
 [<img src="https://i.stack.imgur.com/Jqi6q.png">](Python2Python3)
 
 
-Before we move on to the software you can use to get started with Python, we are going to avoid any confusions by specifying know that there actually *two* Pythons.
+Before we move on to the software you can use to get started with Python, we are going to avoid any confusions by specifying now that there actually *two* Pythons.
 
 The first stable versions of Python were available at the end of the eighties by Guido Van Rossum, its main developer and "benevolent leader", a position from which he stepped down in 2018. When Python was getting structured in the ninties, the team at the time could not foresee all the possible applications and issues their software will face in the future. In 2000, they were able to implement a major update that fixed most of the issues Python was facing, the Python 2.0. However, they already knew at the time that there were still a a bunch of other core improvements that could be made, but that they did not dare implement yet, as those changes would make it impossible to run python files written in the language of the old version with the new application and vice versa. Python was already widely spread at the time, already included and a vital part of various embedded systems, industrial applications and others which made it hard for the team to force the whole community to abandon all their libraries of code and restart from scratch with a better Python. For these reasons, the team decided to maintain Python 2 from 2000 until 2020, while simultaneously releasing Python 3.0 in 2008.
 
