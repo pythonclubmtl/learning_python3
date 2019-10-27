@@ -6,26 +6,17 @@
 1. ###### [Running python](01-installing-python3.md)
 2. ###### [Using python from the shell](02-using-pythonshell.md)
 3. ###### [Strings and integers](03-strings-and-integers.md) 
-    * Go through: https://www.practicepython.org/exercise/2014/01/29/01-character-input.html
-    * Then this one: https://www.practicepython.org/exercise/2014/02/05/02-odd-or-even.html
-    * Next: https://www.practicepython.org/exercise/2014/03/05/05-list-overlap.html
 4. ###### [Lists and dictionaries](04-lists-and-dicts.md)
-    * Fibonacci: Write a script that asks the user how many Fibonacci numbers to generate, then generates them and prints them as a list. Fibonacci sequence: $x_n = x_{n-1} + x_{n-2}$
-    [Solution](./examples/ex_fibonacci.py)
-    * Divisors: https://www.practicepython.org/exercise/2014/02/26/04-divisors.html
-    * Common elements in lists: Write a script that prints all elements common to both lists below, and then prints all elements common to both list and divisible by 7. 
-    [Solution](./examples/ex_listcommon.py)
-    ```
-    l1 = ["42", "11", "33", "97", "63", "86", "4", "46", "72", "88", "59", "55", "13" ]
-    l2 = ["24", "98", "56", "59", "3", "42", "14", "37", "75", "5", "34", "63", "4" ]
-    ```
     * Project: [Caesar cipher](#Caesar-cipher)
 5. ###### [Functions](05-functions.md)
-   * [Perfect numbers](./assets/ex_perfectnumbers.md)
+   * [Perfect numbers](./examples/ex_perfectnumbers.md)
    * Project: [NY baby names](#Baby-names-NY)
-1. ###### [Class](06-classes.md)
+6. ###### [Class](06-classes.md)
 
-[Keep going](learn_more.md)
+##### Python package crash course
+
+* [Sympy](./tuto_snippets/sympy.md): Sympy allows you to perform symbolic computations with Python. Determine the analytical solution to complex problems.
+* [Matplotlib](./tuto_snippets/tuto_matplotlib.py): a Python plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.
 
 ---
 
@@ -33,6 +24,8 @@
 
 1. [Caesar cipher](#Caesar-cipher) (After Lists and dictionaries)
 2. [NY baby names](#Baby-names-NY) (After Functions)
+3. [Make a Telegram bot](./projects/telegrambot/telgram_bots.md)
+4. [Make a Slack bot](./projects/slackbot/making_a_slackbot.md)
    
 
 ##### Caesar cipher:
@@ -105,3 +98,5 @@ A detailed solution for the first task (without using functions though, you will
 ### Extras:
 * [Editors Four spaces VS tabs](02b-space-tabs.md)
 
+
+[Keep going](learn_more.md)

@@ -71,3 +71,9 @@ You can check the `type` of any variable using the type command:
 ```
 
 You can see here that `a` was at first an integer, and the became a string when the value `hello` was affected to it.
+
+# More exercises
+
+* Go through: https://www.practicepython.org/exercise/2014/01/29/01-character-input.html
+* Then this one: https://www.practicepython.org/exercise/2014/02/05/02-odd-or-even.html
+* Next: https://www.practicepython.org/exercise/2014/03/05/05-list-overlap.html

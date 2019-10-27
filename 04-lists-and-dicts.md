@@ -119,3 +119,15 @@ Get length of a list or dictionary:
 >>> my_dict = {'fdm': 'makerbot', 'sla': 'formlabs'}
 >>> len(my_dict)
 ```
+
+# Exercises
+
+  * **Fibonacci**: Write a script that asks the user how many Fibonacci numbers to generate, then generates them and prints them as a list. Fibonacci sequence: $x_n = x_{n-1} + x_{n-2}$
+  [Solution](./examples/ex_fibonacci.py)
+  * **Divisors**: https://www.practicepython.org/exercise/2014/02/26/04-divisors.html
+  * **Common elements in lists**: Write a script that prints all elements common to both lists below, and then prints all elements common to both list and divisible by 7. 
+  [Solution](./examples/ex_listcommon.py)
+  ```
+  l1 = ["42", "11", "33", "97", "63", "86", "4", "46", "72", "88", "59", "55", "13" ]
+  l2 = ["24", "98", "56", "59", "3", "42", "14", "37", "75", "5", "34", "63", "4" ]
+  ```

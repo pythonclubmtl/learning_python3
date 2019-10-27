@@ -1,8 +1,7 @@
 # Python
 
 
-![Wrongkiddo](./assets/pseudowrong.jpg?raw=true "Wrongkiddo")
-
+[<img src="https://i.postimg.cc/cLtf6r7y/pseudowrong.jpg">](https://i.postimg.cc/cLtf6r7y/pseudowrong.jpg)
 
 Python is a general purpose and high level programming language. It is not a compiled language. It favors stuctured programming based on scripts, functional programming and objet oriented programming.
 
@@ -25,7 +24,7 @@ For these reasons, an ideal Python learning experience would be within the Linux
 
 ### Virtual Machines
 
-![Wrongkiddo](./assets/win-in-win.jpg?raw=true "Wrongkiddo")
+[<img src="https://i.postimg.cc/MK2ntdV4/win-in-win.jpg">](https://i.postimg.cc/MK2ntdV4/win-in-win.jpg)
 
 It is actually quite easy to run a "computer within your computer", a virtual computer that is being emulated by the hardware that you have on your computer. Virtual Machine allow you to conviently run a Mac OS Virtual Machine on your Windows machine or a Windows machine on a Linux host. 
 Virtual Box (https://www.virtualbox.org/) is a virtualization (open source software), basically, it can run a virtual Linux computer in a window of your computer, allowing you to minimize your browser or music in the background while you are working on your Python code.
