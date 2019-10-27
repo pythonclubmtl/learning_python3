@@ -50,7 +50,7 @@ Notice how the `Cat` object is carrying all its variables with it, and these can
 ```
 louise = Cat("louise", 2)
 ```
-We could then retrieve information about louise using: `louise.name` and `louise.age`
+We could then retrieve information about Louise using: `louise.name` and `louise.age`
 We can actually retrieve these variables because they were defined using `self.name = name`. If a variable is defined within the class without a `self` it will not be accessible from outside the class.
 
 
@@ -138,7 +138,7 @@ It is also possible to import functions and classes stored in folders within you
 
 # pip
 
-In this section, we will explore how you can install python packages using `pip`, a python pckage manager, using Ubuntu.
+In this section, we will explore how you can install python packages using `pip`, a python package manager, using Ubuntu.
 We will use the `slackclient` package as an example. This package allows you to easily build a bot for Slack, the widely spread communication software.
 
 In order to interact with Slack, you will need the `slackclient` python package. Python packages can easily be installed using `pip` (Python Installs Packages). The first thing we are going to do is to install `pip` for python.

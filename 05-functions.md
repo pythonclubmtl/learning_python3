@@ -87,4 +87,9 @@ Try this code: https://github.com/pythonclubmtl/learning_python3 -> `ex_mondaych
 * Your function should input a **number** (any integer number)
 * Your function should return the **boolean value** `False` or `True`
 
-> Hint: `message = False` affects the **boolean value** `False` to message. Not `false`, `False`. `False` is not a string, not an integer, it is a boolean.
+> Hint: `message = False` affects the **boolean value** `False` to message. Not "false", `False`. `False` is not a string, not an integer, it is a boolean.
+
+
+* Go through: https://www.practicepython.org/exercise/2014/01/29/01-character-input.html
+* Then this one: https://www.practicepython.org/exercise/2014/02/05/02-odd-or-even.html
+* Next: https://www.practicepython.org/exercise/2014/03/05/05-list-overlap.html

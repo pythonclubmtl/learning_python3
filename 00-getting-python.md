@@ -3,11 +3,11 @@
 
 [<img src="https://i.postimg.cc/cLtf6r7y/pseudowrong.jpg">](https://i.postimg.cc/cLtf6r7y/pseudowrong.jpg)
 
-Python is a general purpose and high level programming language. It is not a compiled language. It favors stuctured programming based on scripts, functional programming and objet oriented programming.
+Python is a general purpose and high level programming language. It is not a compiled language. It favors structured programming based on scripts, functional programming and object oriented programming.
 
 # Ideal Python Learning Environment
 
-These workshops are mainly aimed at learning about python, however, they could also be the perfect opportunity to also learn about `Linux`. Experience shows that running development environments on a Linux system is generally easier than on any other OS, as it is one of the prefered OS of developers due to its ability to compile code for almost amy platform. In addition, the Linux environments makes it easy to plug together completely different pieces of software within the same session, which remains challenging on Windows. 
+These workshops are mainly aimed at learning about python, however, they could also be the perfect opportunity to also learn about `Linux`. Experience shows that running development environments on a Linux system is generally easier than on any other OS, as it is one of the preferred OS of developers due to its ability to compile code for almost amy platform. In addition, the Linux environments makes it easy to plug together completely different pieces of software within the same session, which remains challenging on Windows. 
 
 [<img src="https://revolution-computing.typepad.com/.a/6a010534b1db25970b022ad37abd9b200d-pi">](https://blog.revolutionanalytics.com/2018/06/pypl-programming-language-trends.html)
 
@@ -26,11 +26,11 @@ For these reasons, an ideal Python learning experience would be within the Linux
 
 [<img src="https://i.postimg.cc/MK2ntdV4/win-in-win.jpg">](https://i.postimg.cc/MK2ntdV4/win-in-win.jpg)
 
-It is actually quite easy to run a "computer within your computer", a virtual computer that is being emulated by the hardware that you have on your computer. Virtual Machine allow you to conviently run a Mac OS Virtual Machine on your Windows machine or a Windows machine on a Linux host. 
+It is actually quite easy to run a "computer within your computer", a virtual computer that is being emulated by the hardware that you have on your computer. Virtual Machine allow you to conveniently run a Mac OS Virtual Machine on your Windows machine or a Windows machine on a Linux host. 
 Virtual Box (https://www.virtualbox.org/) is a virtualization (open source software), basically, it can run a virtual Linux computer in a window of your computer, allowing you to minimize your browser or music in the background while you are working on your Python code.
 Once you are within your Linux machine, you will (virtually) be running the exact same computer as any other person in the room. You should encounter the exact same errors, bugs and unexpected problems as everybody else. This will help us save a tremendous amount of time that we will use to better focus on Python instead of spending time solving  OS or software related issues. 
 
-However, since installing and setting up a Virtual Machine will also slow down your learning experience, since you might also enounter some bugs related to your current OS, we actually recommend that your first get started with a Python distribution adapted for your OS in order to go through the 3 first sessions. You would ideally switch to your Linux Virtual Machine, that will be ready to use by then, when you will start the fourth session: Lists and Dictionaries.
+However, since installing and setting up a Virtual Machine will also slow down your learning experience, since you might also encounter some bugs related to your current OS, we actually recommend that your first get started with a Python distribution adapted for your OS in order to go through the 3 first sessions. You would ideally switch to your Linux Virtual Machine, that will be ready to use by then, when you will start the fourth session: Lists and Dictionaries.
 
 ### The Python(s)
 
@@ -39,7 +39,7 @@ However, since installing and setting up a Virtual Machine will also slow down y
 
 Before we move on to the software you can use to get started with Python, we are going to avoid any confusions by specifying now that there actually *two* Pythons.
 
-The first stable versions of Python were available at the end of the eighties by Guido Van Rossum, its main developer and "benevolent leader", a position from which he stepped down in 2018. When Python was getting structured in the ninties, the team at the time could not foresee all the possible applications and issues their software will face in the future. In 2000, they were able to implement a major update that fixed most of the issues Python was facing, the Python 2.0. However, they already knew at the time that there were still a a bunch of other core improvements that could be made, but that they did not dare implement yet, as those changes would make it impossible to run python files written in the language of the old version with the new application and vice versa. Python was already widely spread at the time, already included and a vital part of various embedded systems, industrial applications and others which made it hard for the team to force the whole community to abandon all their libraries of code and restart from scratch with a better Python. For these reasons, the team decided to maintain Python 2 from 2000 until 2020, while simultaneously releasing Python 3.0 in 2008.
+The first stable versions of Python were available at the end of the eighties by Guido Van Rossum, its main developer and "benevolent leader", a position from which he stepped down in 2018. When Python was getting structured in the nineties, the team at the time could not foresee all the possible applications and issues their software will face in the future. In 2000, they were able to implement a major update that fixed most of the issues Python was facing, the Python 2.0. However, they already knew at the time that there were still a a bunch of other core improvements that could be made, but that they did not dare implement yet, as those changes would make it impossible to run python files written in the language of the old version with the new application and vice versa. Python was already widely spread at the time, already included and a vital part of various embedded systems, industrial applications and others which made it hard for the team to force the whole community to abandon all their libraries of code and restart from scratch with a better Python. For these reasons, the team decided to maintain Python 2 from 2000 until 2020, while simultaneously releasing Python 3.0 in 2008.
 
 [<img src="http://www.randalolson.com/wp-content/uploads/python-survey-2014-python3-mistake.png">](Python2Python3)
 
@@ -51,20 +51,26 @@ Now that we know a bit more about the twin Pythons, we can move on to download t
 
 ### Packaged Python
 
-In order to easily get started with Python, we are going to rely on a package containing Python with several other Python science and data sciences packages called Anaconda. One of Anaconda's main goal is to simplify package management and deployment. Let's go ahead and download Anaconda: https://www.anaconda.com/distribution/
+In order to easily get started with Python, we are going to rely on a package containing Python with several other Python science and data sciences packages called Anaconda. One of Anaconda's main goal is to simplify package management and deployment. However, Anaconda really [comes with a lot of packages](https://docs.anaconda.com/anaconda/packages/py3.6_win-64/). In order to avoid installing all of these, since we just want to get started with some basic functionalities of Python, we are going to download a slightly different software called Miniconda. It is basically the same as Anaconda, except that it only contains Python packaged for your OS in addition to a few essentials packages. 
 
-After finishing the installation of Anaconda, you should have several new applications installed on your computer (don't worry, you can uninstall all of those with one click if needed). During the next 3 sessions, you will need to run a Python shell. It is a command line environment in which you can input python commands. Python will provide verbose answers in the command line. It is an extremely convenient tool for testing and debugging. In order to start a Python shell, search for the `Anaconda prompt` app.
+* **Windows**: If you are currently running Windows, go through the first section of [this very nice tutorial](https://katiekodes.com/setup-python-windows-miniconda/): "Installing Miniconda & running a Python program". Do not go through "Hello World: running a Python program"
+
+* **MacOS**: Go through steps 1 through 4 of [this good tutorial](http://deeplearning.lipingyang.org/2018/12/24/install-miniconda-on-mac/), which means that you should stop before "Step 5: Uninstalling Miniconda" (:
+
+
+After finishing the installation of Miniconda, you should have several new applications installed on your computer (don't worry, you can uninstall all of those with one click if needed). During the next 3 sessions, you will need to run commands through a Python shell. A Python shell is a command line environment in which you can input python commands. Python will provide verbose answers in order to better help you understand the result of each line of code. It is an extremely convenient tool for testing and debugging. In order to start a Python shell, search for the `Anaconda prompt` app on your computer. 
 
 [<img src="https://miro.medium.com/max/965/1*uZCErUuD6OaOA2DTy1s-_A.png">](https://medium.com/@tranngocminhcdn/running-python-scripts-by-using-anaconda-prompt-da2870d86fd0)
 
+During the next session, we will explore a bit more some of the tools provided with Miniconda. After that, during Session 2, we will start using Python as a calculator and we will introduce variables.
 
 # TL; DR
 
 * Programming is easier on Linux
-* Linux is also a widely used OS that is relevant for researchers to know
+* Linux is also a widely used OS that is relevant for researchers to know about
 * Linux can be used through a Virtual Machine and it is recommended to use Python this way after the fourth session
 * Until then (Session 1-3), we are going to use Python through a distribution that packages Python and other convenient software
-* Python 2 and Python 3 are co-existing until 2020 because migration from Python 2 has met a lot of intertia since 2008
+* Python 2 and Python 3 are co-existing until 2020 because migration from Python 2 has met a lot of inertia since 2008
 * We will be using Python 3
 * Download Anaconda in order to install Python and other convenient packages
 * Start the `anaconda prompt` after Anaconda install

@@ -67,7 +67,7 @@ To get the one before the last one:
 
 # Dictionaries
 
-You can see dictonaries as lists with uniques keys that will lead to a value or element. 
+You can see dictionaries as lists with uniques keys that will lead to a value or element. 
 A list can be seen as a kind of dictionary where the key to call the value of each element is the position of this element in the list.
 For dictionaries, each element is identified by a unique string, called a key, `key: value`.
 
@@ -119,6 +119,44 @@ Get length of a list or dictionary:
 >>> my_dict = {'fdm': 'makerbot', 'sla': 'formlabs'}
 >>> len(my_dict)
 ```
+
+# Scripting
+
+Until now, we have been executing python code within the shell. Most of the code us however written within files, called script, and then executed at once. Python is an interpreted language, this means that each line of the script will be executed one after the other. At this point, you should still be using Spyder from your OS. If you did not install Spyder yet, please go back to [Section 01](./01-running-python3.md). We are going to use the left large pane of Spyder to write our first script.
+
+[<img src="https://i.postimg.cc/43zp7Kh0/spyder-browse.png">](https://i.postimg.cc/43zp7Kh0/spyder-browse.png)
+
+
+The first thing you should do is change your Working Directory to a folder where you would like to save your scripts. When launching a python script, the script must be executed from a certain position within your computer. This will affect which files the script will have access and how it can access them. In my case, I am going to work in a Temporary folder than is in my home folder. Press the Browse button as shown in the screenshot above to change your WD.
+
+Once you have setup your WD, click on the New File button in the top left side corner or by doing File > New File. Start by Saving this new script in the same folder as the previously chosen WD, I called mine `helloworld.py`.
+Add a line in your script that contains:
+```python
+print("Hello World")
+```
+Your script and Spyder setup should look like this one:
+
+[<img src="https://i.postimg.cc/pTmC9VR5/spyder-helloworld.png">](https://i.postimg.cc/pTmC9VR5/spyder-helloworld.png)
+
+In order to run your script, press the green Play button in the top toolbar or use F5. once you do so, Spyder will ask for some additional parameters before executing the script:
+
+[<img src="https://i.postimg.cc/ZnKTPQsN/spyder-runset.png">](https://i.postimg.cc/ZnKTPQsN/spyder-runset.png)
+
+* `Execute in current console` means that we want Spyder to execute the script within the console visible in the bottom right side corner
+* `Remove all variables before execution` means that we want Spyder to clear its variable memory at the end of the script
+* `The current Wordking Directory` means that we want Spyder to execute the script within the WD we defined
+
+After pressing `Run` your script will run and you should be able to see the output of your script in the bottom right corner Python console:
+
+```python
+In [1]: runfile('/home/ilyass/Temp/helloworld.py')
+Hello World
+```
+
+:tada::fire::sparkles: Congratulations :sparkles::fire::tada:
+You just executed your first Python script, the traditional `Hello World`.
+
+You can use all of the commands and functions we previously used within a script. You should try to solve the following exercises by relying on scripts instead of by using the Python shell.
 
 # Exercises
 
