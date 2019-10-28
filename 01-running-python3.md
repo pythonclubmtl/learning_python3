@@ -93,3 +93,7 @@ python3 --version
 
 You should see something like `Python 3.6.7`.
 It is important that your python version is superior to 3.5.
+
+
+[>>> You should now move on to the next session.](./02-operator-calculator.md)
+[<<< Feel like you need to review a few things in the previous session ?](./00-getting-python.md)

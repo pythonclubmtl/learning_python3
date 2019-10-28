@@ -1,8 +1,3 @@
-<!-- $theme: default -->
-<!-- footer: #python - 02  -->
-<!-- $size: 16:9 -->
-<!-- page_number: true -->
-
 # Python 02
 
 Open your favorite Python prompt.
@@ -290,3 +285,7 @@ The script will not be very helpful, as it would display nothing as a result, si
 print(a)
 ```
 We'll get back to `print()` later in our sessions.
+
+
+[>>> You should now move on to the next session.](./03-strings-and-integers.md)
+[<<< Feel like you need to review a few things in the previous session ?](./01-running-python3.md)

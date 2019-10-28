@@ -1,26 +1,27 @@
 # Python club
 
-### Learn:
+### Sessions
 
-0. ###### [Getting Python](00-getting-python.md)
-1. ###### [Running python](01-installing-python3.md)
-2. ###### [Using python from the shell](02-using-pythonshell.md)
-3. ###### [Strings and integers](03-strings-and-integers.md) 
-4. ###### [Lists and dictionaries](04-lists-and-dicts.md)
+0. [Getting python](00-getting-python.md)
+1. [Running python](01-installing-python3.md)
+2. [Using python from the shell](02-using-pythonshell.md)
+3. [Strings and integers](03-strings-and-integers.md) 
+4. [Lists and dictionaries](04-lists-and-dicts.md)
     * Project: [Caesar cipher](#Caesar-cipher)
-5. ###### [Functions](05-functions.md)
-   * [Perfect numbers](./examples/ex_perfectnumbers.md)
-   * Project: [NY baby names](#Baby-names-NY)
-6. ###### [Class](06-classes.md)
+5.  [Functions](05-functions.md)
+    * [Perfect numbers](./examples/ex_perfectnumbers.md)
+    * Project: [NY baby names](#Baby-names-NY)
+6. [Class](06-classes.md)
 
 ##### Python package crash course
 
 * [Sympy](./tuto_snippets/sympy.md): Sympy allows you to perform symbolic computations with Python. Determine the analytical solution to complex problems.
-* [Matplotlib](./tuto_snippets/tuto_matplotlib.py): a Python plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.
+* [Matplotlib](./tuto_snippets/tuto_matplotlib.py): a Python plotting library that produces publication quality figures in a variety of hardcopy formats and interactive environments.
+* [TinyDB](./tuto_snippets/tinydb.md): a document oriented tiny database entirely written in python. The complete code source is less than 1500 lines, which makes it very efficient for datasets no more than a few hundred megabytes.
 
 ---
 
-### Practice (projects):
+### Projects
 
 1. [Caesar cipher](#Caesar-cipher) (After Lists and dictionaries)
 2. [NY baby names](#Baby-names-NY) (After Functions)

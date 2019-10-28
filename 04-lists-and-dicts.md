@@ -1,6 +1,14 @@
-# lists
+# Python 04
 
-Open your terminal (`Ctrl+Alt+T`), then write 
+1. [Lists](#lists)
+2. [Dictionaries](#dictionaries)
+3. [Scripting](#scripting)
+4. [Exercises](#exercises)
+5. [Project: Caesar cipher](#project-caesar-cipher)
+
+Open your favorite Python3 prompt and let's get started !
+
+# Lists
 
 Lists are a compound datatypes often referred to as sequences, most common is `list`. These datatypes contain several elements which are all stored in a separate compartment, each element can be easily accessed, modified or removed. Each element is identified by its position in the list, with the first element being `element_0`, the second one `element_1`.
 
@@ -169,3 +177,54 @@ You can use all of the commands and functions we previously used within a script
   l1 = ["42", "11", "33", "97", "63", "86", "4", "46", "72", "88", "59", "55", "13" ]
   l2 = ["24", "98", "56", "59", "3", "42", "14", "37", "75", "5", "34", "63", "4" ]
   ```
+
+# Project: Caesar cipher
+
+The Caesar cipher is one of the earliest known ciphers, it is also quite simple as the encryption and decryption process can easily be done using pen and paper. Suetonius described the Caesar cipher is his book *Life of Julius Caesar*: 
+
+>"If he had anything confidential to say, he wrote it in cipher, that is, by so changing the order of the letters of the alphabet, that not a word could be made out. If anyone wishes to decipher these, and get at their meaning, he must substitute the fourth letter of the alphabet, namely D, for A, and so with the others."
+[Suetonius, Life of Julius Caesar 56](https://en.wikipedia.org/wiki/Caesar_cipher)
+
+More detailed explanation from Wikipedia:
+
+> In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.
+[Caesar cipher, Wikipedia]((https://en.wikipedia.org/wiki/Caesar_cipher))
+
+Try it for yourself: http://practicalcryptography.com/ciphers/caesar-cipher/
+
+Your goal is to: **Write a caesar cipher program to encode and decode messages.**
+Below are some helpful functions.
+
+Need the alphabet as a string ? 
+```python
+>>> import string
+>>> string.ascii_lowercase
+```
+Position of the letter `t` in the alphabet (start counting from 0) ?
+```python
+>>> import string
+>>> alphabet = string.ascii_lowercase
+>>> alphabet.find("t")
+```
+
+Add character to a new string using character's position in the alphabet:
+
+```python
+>>> import string
+>>> alphabet = string.ascii_lowercase
+>>> new_character = alphabet[8]
+>>> encrypted_message = ""
+>>> encrypted_message += new_character
+>>> new_character = alphabet[22]
+>>> encrypted_message += new_character
+>>> encrypted_message
+```
+
+[Need more string manipulation methods ?](https://docs.python.org/3/library/string.html)
+You should now be able to write a nice Caesar's cipher encoder/decoder.
+Once you're done, a possible solution is available [here](./examples/ex_caesarcipher.py) .
+
+---
+
+[>>> You should now move on to the next session.](./05-functions.md)
+[<<< Feel like you need to review a few things in the previous session ?](./03-strings-and-integers.md)

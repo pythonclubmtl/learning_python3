@@ -1,5 +1,8 @@
 # class
 
+[<img src="https://i.postimg.cc/wT7ZQ5Jg/importantigravity.png">](https://i.postimg.cc/wT7ZQ5Jg/importantigravity.png)
+
+
 > Classes provide a means of bundling data and functionality together. 
 > Creating a new class creates a new type of object, allowing new instances of that type to be made.
 
@@ -182,3 +185,23 @@ Once pip finishes installing the package for you, you can check that everything 
 
 ```
 If you don't get an error message, then you're good to go.
+
+# Keep going
+
+You are now done with the main sessions !
+:tada::fire::sparkles: Congratulations :sparkles::fire::tada:
+
+There is still plenty to learn and to do. Learn about some intersting python packages here:
+
+* [Sympy](./tuto_snippets/sympy.md): Sympy allows you to perform symbolic computations with Python. Determine the analytical solution to complex problems.
+* [Matplotlib](./tuto_snippets/tuto_matplotlib.py): a Python plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.
+* [TinyDB](./tuto_snippets/tinydb.md): a document oriented tiny database entirely written in python. The complete code source is less than 1500 lines, which makes it very efficient for datasets no more than a few hundred megabytes.
+
+Work on some projects in order to practice all this newly acquired knowledge:
+
+1. [Caesar cipher](#Caesar-cipher) (After Lists and dictionaries)
+2. [NY baby names](#Baby-names-NY) (After Functions)
+3. [Make a Telegram bot](./projects/telegrambot/telgram_bots.md)
+4. [Make a Slack bot](./projects/slackbot/making_a_slackbot.md)
+
+GLHF

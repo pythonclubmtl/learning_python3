@@ -79,3 +79,6 @@ During the next session, we will explore a bit more some of the tools provided w
 # Homework
 
 1. Follow this tutorial to install a Linux Virtual Machine: https://itsfoss.com/install-linux-in-virtualbox/ (ideally, you would do this while doing sessions 1-3)
+
+
+[>>> You should now move on to the next session.](./01-running-python3.md)

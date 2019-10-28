@@ -1,6 +1,17 @@
 # Python 03
 
 1. [Strings](#strings)
+  a. [len()](#len)
+  b. [string arrays](#string-arrays)
+  c. [Exercise 1](#exercise-1)
+2. [Types](#types)
+  a. [Exercise 2](#exercise-2)
+3. [Simple String methods](#simple-string-methods)
+  a. [Check String][#check-string]
+  b. [Exercise 3][#exercise-3]
+
+[<img src="https://i.postimg.cc/5N2bdFCR/pythonswap.png">](https://i.postimg.cc/5N2bdFCR/pythonswap.png)
+
 
 # Strings
 
@@ -141,7 +152,7 @@ The Traceback will provide you with most of the information you need in order to
 3. Define a variable `a` that contains a boolean variable and print its type with the `type()` function
 
 
-## Simple String methods
+# Simple String methods
 
 `type()`, `len()` and `print()` are Python standard functions. These functions can be used at any time within a Python console. They are independent of the variable used as an input as they can accept any object. They will return an error message if the object is not of the expected type though, as you have seen in [Exercise 1](#exercise-1) with integers and `len()`.
 
@@ -178,7 +189,7 @@ A very convenient string built-in method is the `.replace()` method. This method
 'If-you-torture-the-data-long-enough,-it-will-confess.'
 ```
 
-### Check String
+## Check String
 
 In order to check if a string or character is present in another string, you can use the commands `in` or `not in`:
 ```python
@@ -189,7 +200,7 @@ True
 
 ### Exercise 3
 
-###### Variables, reminder:
+Variables, reminder:
 
 Which are correct variable assignments?
 
@@ -199,3 +210,7 @@ Which are correct variable assignments?
 4. `seven = 3 * 4`
 
 An assignment variable is done with the `=` operator and affects the right side value to the left side box/variable.
+
+
+[>>> You should now move on to the next session.](./04-lists-and-dicts.md)
+[<<< Feel like you need to review a few things in the previous session ?](./02-operator-calculator.md)
