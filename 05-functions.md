@@ -37,7 +37,7 @@ We will use the `datetime` package (provided with python), open your python shel
 ```python
 >>> from datetime import date
 >>> date.today()
->>> datetime.date(2019, 1, 28)
+datetime.date(2019, 1, 28)
 ```
 * `datetime` also provides a function which finds the day of the week for a specific date (https://docs.python.org/3/library/datetime.html#datetime.date.weekday):
 ```python

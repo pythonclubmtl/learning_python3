@@ -1,3 +1,7 @@
+---
+marp: true
+---
+
 # Python 02
 
 Open your favorite Python prompt.
