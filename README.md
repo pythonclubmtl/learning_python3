@@ -3,7 +3,7 @@
 ### Sessions
 
 0. [Getting python](00-getting-python.md)
-1. [Running python](01-installing-python3.md)
+1. [Running python](01-running-python3.md)
 2. [Using python from the shell](02-using-pythonshell.md)
 3. [Strings and integers](03-strings-and-integers.md) 
 4. [Lists and dictionaries](04-lists-and-dicts.md)
