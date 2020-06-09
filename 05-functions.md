@@ -120,7 +120,7 @@ string.lower() # Converts given string into lowercase and returns it
 max(list) # Returns maximum value from a list
 set(list) # Returns a list without any duplicates
 ```
-A detailed solution for the first task (without using functions though, you will have to take care of that) is [provided here](./datasets/ex_babynames.py).
+A detailed solution for the first task (without using functions though, you will have to take care of that) is [provided here](./examples/ex_babynames.py).
 
 ---
 
